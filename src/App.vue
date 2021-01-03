@@ -41,7 +41,10 @@ header {
   color: #ffffff;
   position: fixed;
   top: 0px;
-  width: -webkit-fill-available;
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
 }
 
 header span {
