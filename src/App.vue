@@ -30,7 +30,7 @@ body {
 
 main {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 96px;
 }
 
 header {
@@ -39,6 +39,9 @@ header {
   padding: 0 16px 0 24px;
   background-color: #35495E;
   color: #ffffff;
+  position: fixed;
+  top: 0px;
+  width: -webkit-fill-available;
 }
 
 header span {
