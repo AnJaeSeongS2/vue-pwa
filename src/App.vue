@@ -42,6 +42,9 @@ header {
   position: fixed;
   top: 0px;
   width: -webkit-fill-available;
+  width: -moz-available;
+  width: -o-available;
+  width: -ms-available;
 }
 
 header span {
