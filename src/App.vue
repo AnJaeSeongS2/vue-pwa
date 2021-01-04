@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <v-app id="app">
     <header>
       <span>Vue.js PWA</span>
     </header>
@@ -7,12 +7,20 @@
       <img src="./assets/logo.png" alt="Vue.js PWA">
       <router-view></router-view>
     </main>
-  </div>
+    <v-btn color="success">Success</v-btn>
+    <v-btn color="error">Error</v-btn>
+    <v-btn color="warning">Warning</v-btn>
+    <v-btn color="info">Info</v-btn>
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
+import Footer from '@/components/Footer';
+
 export default {
   name: 'app',
+  components: { Footer },
 };
 </script>
 
@@ -56,5 +64,72 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+
+Footer {
+  bottom: 0px;
+}
+
+.mdi::before {
+  font-size: 24px;
+  line-height: 14px;
+}
+.btn .mdi::before {
+  position: relative;
+  top: 4px;
+}
+.btn-xs .mdi::before {
+  font-size: 18px;
+  top: 3px;
+}
+.btn-sm .mdi::before {
+  font-size: 18px;
+  top: 3px;
+}
+.dropdown-menu .mdi {
+  width: 18px;
+}
+.dropdown-menu .mdi::before {
+  position: relative;
+  top: 4px;
+  left: -8px;
+}
+.nav .mdi::before {
+  position: relative;
+  top: 4px;
+}
+.navbar .navbar-toggle .mdi::before {
+  position: relative;
+  top: 4px;
+  color: #FFF;
+}
+.breadcrumb .mdi::before {
+  position: relative;
+  top: 4px;
+}
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+.breadcrumb a:hover span {
+  text-decoration: underline;
+}
+.alert .mdi::before {
+  position: relative;
+  top: 4px;
+  margin-right: 2px;
+}
+.input-group-addon .mdi::before {
+  position: relative;
+  top: 3px;
+}
+.navbar-brand .mdi::before {
+  position: relative;
+  top: 2px;
+  margin-right: 2px;
+}
+.list-group-item .mdi::before {
+  position: relative;
+  top: 3px;
+  left: -3px
 }
 </style>
